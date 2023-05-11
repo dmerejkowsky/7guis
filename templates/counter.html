@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+  </head>
+  <body>
+  <p id="counter">
+    {{ counter }}
+  </p>
+  <button hx-post="/up" hx-target="#counter">
+    up
+  </button>
+  <button hx-post="/down" hx-target="#counter">
+    down
+  </button>
+  </body
+</html>
