@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Temperatures</title>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+  </head>
+  <body>
+
+  <h2>Celcius to Farenheit</h2>
+
+  <input
+    id="input-celcius"
+    type="number"
+    hx-post="/celcius"
+    hx-target="#input-farenheit"
+    hx-swap="outerHTML"
+    name="celcius"
+    value=""
+  >
+  <label for="input-celcius">Celcius</label>
+
+  <br />
+
+  <input
+    id="input-farenheit"
+    type="number"
+    hx-post="/farenheit"
+    hx-target="#input-celcius"
+    hx-swap="outerHTML"
+    name="farenheit"
+    value=""
+  >
+  <label for="input-farenheit">Farenheit</label>
+
+  </body
+</html>
